@@ -1,0 +1,21 @@
+body {
+    font-family: 'Robato', sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    /* 
+    'border-box' will not affect the calculated width value! 
+    - this is a very special property that we are applying globally
+    */
+    box-sizing: border-box;
+}
+
+a {
+   color: $mainOrange; 
+}

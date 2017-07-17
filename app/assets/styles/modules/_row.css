@@ -1,0 +1,46 @@
+.row {
+
+    /*  
+    Combined width must be no more then %100
+    */
+
+    @mixin clearfix;
+
+    &--gutters {
+        margin-right: -65px;
+    }
+
+    &--gutters > div {
+        padding-right: 65px;
+    }
+
+    &__b-margin-screenSmall-down {
+        margin-bottom: 1rem;
+    }
+
+    @mixin screenMedium {
+
+        /* reset an already declared class */
+        &__b-margin-screenSmall-down {
+            margin-bottom: 0;            
+        }
+
+        &__medium-4 {
+            float: left;
+            width: 33%;
+        }
+
+        &__medium-4--larger {
+            width: 37%;
+        }
+
+        &__medium-8 {
+            float: left;
+            width: 67%;
+        }
+
+        &__medium-8--smaller {
+            width: 63%;
+        }
+    }
+}

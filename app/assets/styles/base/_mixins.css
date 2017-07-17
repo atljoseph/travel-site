@@ -1,0 +1,30 @@
+
+/*
+Screen Size Media Mixins
+*/
+@define-mixin screenSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin screenMedium {
+    @media (min-width: 800px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin screenLarge {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
+
+/*
+ClearFix Mixins - this prevents you from having to add a "clear-me" div after the row to clear the effects of the css floats on height 
+*/
+@define-mixin clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}

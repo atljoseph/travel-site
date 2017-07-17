@@ -1,0 +1,20 @@
+
+/* You would not alwayts do BEM CSS in the same way as this file */
+.generic-content-container {
+
+    /* single layer nesting is OK, but not more */
+    p {
+        line-height: 1.65;
+        font-size: 1.0rem;
+        margin: 1.8rem 0;
+
+        @mixin screenSmall {
+            font-size: 1.125rem;            
+        }
+    }
+
+    /* target any links that appear in any paragraph element */
+    p a {
+        font-weight: 700;
+    }
+}
