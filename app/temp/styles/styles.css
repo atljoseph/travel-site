@@ -405,17 +405,17 @@ a {
 /*Always use rem instead of px, or %, etc*/
 /*1rem = 16px on the average browser*/
 /*Processed by PostCSS*/
-.large-hero {
+.hero {
     /*Base styles*/
     position: relative;
     border-bottom: 10px solid #2f5572;
 }
-.large-hero__image {
+.hero__image {
       /*treat the image as a div with no padding*/
       display: block;
     }
 /*&__text-content compiles as large-hero__text-content CSS Class*/
-.large-hero__text-content {
+.hero__text-content {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -425,19 +425,19 @@ a {
       text-align: center;
     }
 /*large-hero__title*/
-.large-hero__title {
+.hero__title {
       font-weight: 300;
       color: #2f5572;
       font-size: 2.4rem;
       margin: 0;
     }
 @media (min-width: 530px) {
-.large-hero__title {
+.hero__title {
         font-size: 4.8rem
     }
     }
 /*etc*/
-.large-hero__subtitle {
+.hero__subtitle {
       font-weight: 300;
       color: #2f5572;
       font-size: 1.5rem;
@@ -445,12 +445,12 @@ a {
       
     }
 @media (min-width: 530px) {
-.large-hero__subtitle {
+.hero__subtitle {
         font-size: 2.9rem
       
     }
     }
-.large-hero__description {
+.hero__description {
       color: #fff;
       font-size: 1.1rem; 
       font-weight: 100px;
@@ -460,7 +460,7 @@ a {
       margin-right: auto;
     }
 @media (min-width: 530px) {
-.large-hero__description {
+.hero__description {
         font-size: 1.875rem
     }
     }
@@ -489,15 +489,15 @@ a {
             margin-bottom: 3.875em
     }
     }
-.page-section {
+.section {
     padding: 1.2rem 0;
 }
 @media (min-width: 800px) {
-.page-section {
+.section {
         padding: 4.5rem 0
 }
     }
-.page-section--blue {
+.section--blue {
         background-color: #2f5572;
         color: #FFF;
     }

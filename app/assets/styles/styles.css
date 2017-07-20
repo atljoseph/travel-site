@@ -8,9 +8,9 @@
 
 /* style element classes */
 @import "modules/_btn";
-@import "modules/_large-hero";
+@import "modules/_hero";
 @import "modules/_wrapper";
-@import "modules/_page-section";
+@import "modules/_section";
 @import "modules/_headline";
 @import "modules/_row";
 @import "modules/_generic";
