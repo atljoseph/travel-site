@@ -598,18 +598,18 @@ a {
     }
 /* You would not alwayts do BEM CSS in the same way as this file */
 /* single layer nesting is OK, but not more */
-.generic-content-container p {
+.generic p {
         line-height: 1.65;
         font-size: 1.0rem;
         margin: 1.8rem 0;
     }
 @media (min-width: 530px) {
-.generic-content-container p {
+.generic p {
             font-size: 1.125rem
     }
     }
 /* target any links that appear in any paragraph element */
-.generic-content-container p a {
+.generic p a {
         font-weight: 700;
     }
 

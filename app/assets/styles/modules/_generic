@@ -1,6 +1,6 @@
 
 /* You would not alwayts do BEM CSS in the same way as this file */
-.generic-content-container {
+.generic {
 
     /* single layer nesting is OK, but not more */
     p {
