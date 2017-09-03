@@ -1,12 +1,13 @@
 
 /* You would not alwayts do BEM CSS in the same way as this file */
-.generic-content-container {
+.generic {
 
     /* single layer nesting is OK, but not more */
     p {
         line-height: 1.65;
         font-size: 1.0rem;
-        margin: 1.8rem 0;
+        font-weight: 300;
+        margin: 0 0 1.8rem 0;
 
         @mixin screenSmall {
             font-size: 1.125rem;            

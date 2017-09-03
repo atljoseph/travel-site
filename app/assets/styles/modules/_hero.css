@@ -2,7 +2,7 @@
 /*1rem = 16px on the average browser*/
 
 /*Processed by PostCSS*/
-.large-hero {
+.hero {
     /*Base styles*/
     position: relative;
     border-bottom: 10px solid $mainBlue;

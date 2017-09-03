@@ -37,4 +37,4 @@ gulp.task('cssInject', ['styles'], function() {
     // give the css to browserSync
     return gulp.src('./app/temp/styles/styles.css')
         .pipe(browserSync.stream());
-});
+}); 
