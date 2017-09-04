@@ -16,6 +16,16 @@
 
     /*  */    
 
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
+    &--gutters-small > div {
+        padding-right: 45px;
+    }
+
+    /*  */    
+
     &--gutters-large {
         margin-right: -100px;
     }
@@ -28,6 +38,10 @@
 
     &__b-margin-screenSmall-and-smaller {
         margin-bottom: 1rem;
+    }
+
+    &--t-padding {
+        padding-top: 80px;
     }
 
     @mixin screenMedium {
@@ -58,6 +72,60 @@
 
         &__medium-8--smaller {
             width: 63%;
+        }
+    }
+
+    @mixin screenLarge {
+
+        /* reset an already declared class */
+        &__b-margin-screenSmall-down {
+            margin-bottom: 0;            
+        }
+
+        &__large-4 {
+            float: left;
+            width: 33%;
+        }
+
+        &__large-4--larger {
+            width: 37%;
+        }
+
+        &__large-6 {
+            float: left;
+            width: 50%;
+        }
+
+        &__large-8 {
+            float: left;
+            width: 67%;
+        }
+
+        &__large-8--smaller {
+            width: 63%;
+        }
+    }
+
+    /* BEGIN equal height rules */
+    &--equal-height-at-medium {
+        @mixin screenMedium {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+    &--equal-height-at-large {
+        @mixin screenLarge {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
         }
     }
 }
