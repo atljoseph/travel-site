@@ -17,6 +17,7 @@
 @import "modules/_generic-content";
 @import "modules/_featured";
 @import "modules/_testimonial";
+@import "modules/_site-footer";
 
 /* icon sprites */
 @import "modules/_sprite";
