@@ -1,0 +1,21 @@
+/* 
+    - mustache templates for gulp-svg-sprite package
+    - see github for more docs
+    - do not edit styles/modules/_sprite directly
+    - instead edit gulp/templates/_sprite.css
+*/
+
+
+
+{{#shapes}}
+    {{#first}}
+    .icon {
+        background-image: url('/assets/images/sprites/{{{sprite}}}');
+    }
+    {{/first}}
+    .icon--{{base}} {
+        width: {{width.outer}}px;
+        height: {{height.outer}}px;
+        background-position: {{position.relative.xy}};
+    }
+{{/shapes}}
